@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+<body onload="load()"> <!-- onload significa que quando carregar a pagina primeiro vai carregar uma certa funcao -->
+    <script src ="script.js"></script>
+    <button type="button" onclick="clicou()">Clique Aqui</button>
+    <h3 id="agradecimento" onclick="redirecionar()"></h3>
+    <p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse aqui</p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse aqui</p>
+    
+    <select onchange="funcaoChange(this)"> <!-- onchange: rodar para entender quando se tem um select com um combo de op;coes vc consegue que nele quando o cara coletar o valor ele insere no lugar -->
+        <option value = "1">Valor 1</option>
+        <option value = "2">Valor 2</option>
+        <option value = "3">Valor 3</option>
+    </select>
+</body>
+<!-- this faz referencia de que é apenas naquele lugar, diferenciando em qual lugar colocar
+
+    this passa ele mesmo como parametro
+
+-->
+</html>
